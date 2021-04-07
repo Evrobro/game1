@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+  $('.phone').on('keyup', function() {
+    let empty = false;
+
+    $('.phone').each(function() {
+      empty = $(this).val().length == 0;
+    });
+
+    if (empty)
+      $('.button').attr('disabled', 'disabled');
+    else
+      $('.button').attr('disabled', false);
+  });
+});
+
+</script>
+
+<div class="losing"></div>
+
+<div class="startgame">   <h1>ForestMain</h1>
+    <input placeholder="Введите ваше имя" type="text" name="" class="phone"> <br> <br>
+    <button class="button"id="startGameBtn" onmouseleave="enableBtn(this)" onmouseenter="checkMouseEnter(this)" onclick="hideForm()" disabled="disabled">
+        Начать игру
+    </button>
+</div>
+<div hidden class="game"></div>
+<script src="assets/index.js"></script>
+</body>
+</html>

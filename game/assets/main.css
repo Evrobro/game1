@@ -1,0 +1,52 @@
+.game {
+    width: 1500px;
+    height: 600px;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    text-decoration: white;
+}
+
+body{
+	background-image: url('bcg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+input{
+	    border: 1px solid #ffffff;
+    background: transparent;
+    width: 10%;
+    height: 50px;
+    font-family: "Oswald",sans-serif;
+    outline: none;
+    font-size: 14pt;
+    color: white;
+}
+
+
+button{
+	    border: 1px solid #ffffff;
+   
+    width: 10%;
+    height: 50px;
+    color: #000000;
+}
+.startgame{
+
+	text-align: center;
+
+	margin: 0 auto;
+	margin-top: 20%;
+}
+
+h1{
+	font-family: 'Reggae One', cursive;
+    color: white;
+}
+
+#score{
+	font-size: 50pt;
+}
